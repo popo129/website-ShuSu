@@ -26,6 +26,38 @@
             line-height: 2;
             color: #eaeae0;
         }
+
+        #fab {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            font-size: 16px;
+            background: #647369;
+            color: #eaeae0;
+            border: none;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        #menu {
+            position: fixed;
+            bottom: 80px;
+            right: 40px;
+            background: none;
+            font-size: 18px;
+            display: none;
+            z-index: 1000;
+            font-family: "寒蝉";
+            font-weight: 700;
+        }
+        #menu a {
+            display: block;
+            padding: 16px 24px;
+            color: black;
+            text-decoration: none;
+        }
+        #menu a:hover {
+            background: #eaeae0;
+        }
     </style>
 </head>
 <body style="
@@ -43,7 +75,7 @@
         background-color: #eaeae0;
     ">
         <h1 class="title">拟古 — 擬古</h1>
-        <img src="../图1.jpg" alt="the picture is unable to be shown" height="500px">
+        <img src="../图1.jpg" alt="the picture is unable to be shown" width="90%">
         <br>
         <div style="
             width: 79%;
@@ -99,5 +131,26 @@
             </p>
         </div>
     </div>
+
+    <button id="fab">=</button>
+    <div id="menu">
+        <a href="导论.html">导论</a>
+        <a href="" style="color: aliceblue;">拟古</a>
+        <a href="second.html">吴江垂虹亭作</a>
+        <a href="third.html">入境寄集贤林舍人</a>
+        <a href="fourth.html">重九会郡楼</a>
+        <a href="fifth.html">和林公岘山之作</a>
+        <a href="sixth.html">送王涣之彦舟</a>
+    </div>
+
+
+    <script>
+        const B = document.getElementById('fab');
+        const M = document.getElementById('menu');
+
+        B.addEventListener('click', () => {
+            M.style.display = M.style.display === 'block' ? 'none' : 'block';
+        })
+    </script>
 </body>
 </html>

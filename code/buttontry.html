@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #toc-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 6px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    z-index: 1000; 
+    border-radius: 80px;
+  }
+  #toc-menu {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background: none;
+    border-radius: 0;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+  }
+
+  #toc-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: #333;
+    text-decoration: none;
+  }
+  #toc-menu a:hover {
+  background: #f0f0f0;  /* 悬停时背景色变为浅灰色 */
+  color: #0066cc;       /* 可选：悬停时文字颜色变化 */
+}
+</style>
+</head>
+<body>
+
+<!-- 页面内容 -->
+<div style="height: 2000px; padding: 20px; background-color: #3498db;">
+  <h1 id="section1">第一部分</h1>
+  <p>内容...</p>
+  
+  <h1 id="section2" style="margin-top: 500px;">第二部分</h1>
+  <p>内容...</p>
+  
+  <h1 id="section3" style="margin-top: 500px;">第三部分</h1>
+  <p>内容...</p>
+</div>
+
+<!-- 目录按钮和菜单 -->
+<button id="toc-btn">目录</button>
+<div id="toc-menu">
+  <a href="fifth.html">第一部分</a>
+  <a href="#section2">第二部分</a>
+  <a href="#section3">第三部分</a>
+</div>
+
+<script>
+  const btn = document.getElementById('toc-btn');
+  const menu = document.getElementById('toc-menu');
+  
+  btn.addEventListener('click', () => {
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  });
+</script>
+
+</body>
+</html>
