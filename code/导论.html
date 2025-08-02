@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "寒蝉";
+            src: url(../font-re.otf);
+        }
+
+        p{
+            color: #7d794c;
+        }
+        .title{
+            font: normal 700 40px "寒蝉";
+            color: #647369;
+        }
+        .context{
+            font: normal 400 18px "寒蝉";
+            line-height: 2;
+        }
+        .tips{
+            font: normal 400 16px "寒蝉";
+            line-height: 2;
+            color: #eaeae0;
+        }
+        
+        #fab {
+            position: fixed;
+            bottom: 10%;
+            right: 5%;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            background: #647369;
+            color: #eaeae0;
+            border: none;
+            border-radius: 100%;
+            z-index: 1000;
+        }
+        #menu {
+            position: fixed;
+            bottom: 18%;
+            right: 5%;
+            background: none;
+            font-size: 18px;
+            display: none;
+            z-index: 1000;
+            font-family: "寒蝉";
+            font-weight: 700;
+        }
+        #menu a {
+            display: block;
+            padding: 16px 24px;
+            color: black;
+            text-decoration: none;
+        }
+        #menu a:hover {
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <button id="fab">=</button>
+    <div id="menu">
+        <a href="导论.html" style="color: aliceblue;">导论</a>
+        <a href="fifth.html">拟古</a>
+        <a href="second.html">吴江垂虹亭作</a>
+        <a href="third.html">入境寄集贤林舍人</a>
+        <a href="fourth.html">重九会郡楼</a>
+        <a href="fifth.html">和林公岘山之作</a>
+        <a href="sixth.html">送王涣之彦舟</a>
+    </div>
+
+
+    <script>
+        const B = document.getElementById('fab');
+        const M = document.getElementById('menu');
+
+        B.addEventListener('click', () => {
+            M.style.display = M.style.display === 'block' ? 'none' : 'block';
+        })
+    </script>
+
+</body>
+</html>

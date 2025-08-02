@@ -26,6 +26,41 @@
             line-height: 2;
             color: #eaeae0;
         }
+
+        #fab {
+            position: fixed;
+            bottom: 10%;
+            right: 5%;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            background: #647369;
+            color: #eaeae0;
+            border: none;
+            border-radius: 100%;
+            z-index: 1000;
+        }
+        #menu {
+            position: fixed;
+            bottom: 18%;
+            right: 5%;
+            background: none;
+            font-size: 18px;
+            display: none;
+            z-index: 1000;
+            font-family: "寒蝉";
+            font-weight: 700;
+        }
+        #menu a {
+            display: block;
+            padding: 16px 24px;
+            color: black;
+            text-decoration: none;
+        }
+        #menu a:hover {
+            color: aliceblue;
+        }
+        
     </style>
 </head>
 <body style="
@@ -51,24 +86,18 @@
             justify-items: center;
         ">
             <p class="context">
-                断云一片洞庭帆，玉破鲈鱼金破柑。好作新诗继桑苎，垂虹秋色满东南。<br>
+                断云一片洞庭帆，玉破鲈鱼金破柑。好作新诗继桑苎，垂虹秋色满东南。<br><br>
                 泛泛五湖霜气清，漫漫不辨水天形。何须织女支机石，且戏常娥称客星。<br>
                 时为湖州之行<br>
             </p>
             <p class="context" style="font-style: italic;
                                     border-left: 5px solid #7d794c;
                                     padding-left: 15px;">
-                青松刚劲地挺着它的身姿，凌霄花攀援在松树上。
-                枝叶杂生，花朵的枝条倚在青松上，渐渐地爬上树顶。
-                秋天的花儿如红色烟霞般绽放，美丽得像云锦一般。
-                凌霄花对自己依赖别人的行为不感到惭愧，反而因自己遮掩住了巍峨挺拔的松树感到得意。
-                柏树见此，吐出了柏籽；仙鹤看到了，也缩起了自己的颈项。
-                青松却对此不以为意：它不追求外表，长得朴实无华。青松经冬不凋；即使凌霄花枝招展，它却不到冬天便会枯萎。
-                龟与鹤都是长寿的动物，但羽毛和龟壳是不同的。
-                它们都是灵物和寿者，因此而能相伴相行，忘却了自己形状的不同。
-                鹤有冲天的气概，龟厌烦地面上安逸的生活。
-                两只鹤分别用嘴衔住竹枝的一端，让龟咬着竹子中间的部分，就这样他们将龟带上了天。
-                飞在空中，鹤嘱咐龟说：“别说话，说话就有可能掉下去堕入泥潭。”
+                断云般的小船漂浮在太湖上。湖中的鲈鱼白润如玉，柑桔亮如金。
+                我真想接踵陆羽，卜居洞庭，好时时写出新诗。眼前垂虹亭畔的秋色弥漫大地。
+                <br>
+                广阔无边的湖面上充满了霜天的清气，水天一色难辨分界。
+                何必跋山涉水去寻找织女的支机石？且在这儿游玩嬉戏，作一回嫦娥的客人。
             </p>
         </div>
     </div>
@@ -88,13 +117,36 @@
             justify-self: center;
         ">
             <p class="tips">
-                1.作品内容中的两点为重复符号，代表前一个字。
-                参考“种种出枝叶”中的“种种”，“舒光射丸丸”中的“丸丸”，和“种种是灵物”中的种种。<br>
-                2.“拟古”是指诗文模仿古人风格形式的创作手法，
-                即这首诗是诗人参考古人风格创作的<br>
-
+                1.帖中“霜”字为错字，右边注一小字“金”为正确内容，此为一种修改方式。<br>
+                2.此诗为诗人在湖州之行时游览太湖所作，描绘洞庭之美景。前四句被厉鹗收录在《宋诗纪事》中。<br>
+                3.“洞庭”和“五湖”皆为太湖别称；今“五湖”称洞庭湖，鄱阳湖，太湖，洪泽湖，和巢湖（古时太湖有别称“洞庭”，而洞庭湖有别称“云梦”）。<br>
+                4.诗中的松江四腮鲈和洞庭红蜜桔为太湖时令美味。<br>
+                5.“桑苎”代指茶圣陆羽。陆羽号桑苎翁，曾隐居湖州，生前以文人著称且“词艺卓异“。亦有说“桑苎”一词代指故乡。<br>
+                6.支机石典故，出自：“昔有一人寻河源，见妇人浣纱，以问之，曰：‘此天河也。’乃与一石而归。问严君平，云：‘此支机石也。’”<br>
+                7.客星在古代指天上新出现的星。常与“客星犯帝座”的典故联系，特指东汉隐士严光。亦有解释称”客星“为”客人“。<br>
             </p>
         </div>
     </div>
+
+    <button id="fab">=</button>
+    <div id="menu">
+        <a href="导论.html">导论</a>
+        <a href="first.html">拟古</a>
+        <a href="second.html" style="color: aliceblue;">吴江垂虹亭作</a>
+        <a href="third.html">入境寄集贤林舍人</a>
+        <a href="fourth.html">重九会郡楼</a>
+        <a href="fifth.html">和林公岘山之作</a>
+        <a href="sixth.html">送王涣之彦舟</a>
+    </div>
+
+
+    <script>
+        const B = document.getElementById('fab');
+        const M = document.getElementById('menu');
+
+        B.addEventListener('click', () => {
+            M.style.display = M.style.display === 'block' ? 'none' : 'block';
+        })
+    </script>
 </body>
 </html>

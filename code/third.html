@@ -26,6 +26,41 @@
             line-height: 2;
             color: #eaeae0;
         }
+
+        #fab {
+            position: fixed;
+            bottom: 10%;
+            right: 5%;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            background: #647369;
+            color: #eaeae0;
+            border: none;
+            border-radius: 100%;
+            z-index: 1000;
+        }
+        #menu {
+            position: fixed;
+            bottom: 18%;
+            right: 5%;
+            background: none;
+            font-size: 18px;
+            display: none;
+            z-index: 1000;
+            font-family: "寒蝉";
+            font-weight: 700;
+        }
+        #menu a {
+            display: block;
+            padding: 16px 24px;
+            color: black;
+            text-decoration: none;
+        }
+        #menu a:hover {
+            color: aliceblue;
+        }
+
     </style>
 </head>
 <body style="
@@ -57,17 +92,10 @@
             <p class="context" style="font-style: italic;
                                     border-left: 5px solid #7d794c;
                                     padding-left: 15px;">
-                青松刚劲地挺着它的身姿，凌霄花攀援在松树上。
-                枝叶杂生，花朵的枝条倚在青松上，渐渐地爬上树顶。
-                秋天的花儿如红色烟霞般绽放，美丽得像云锦一般。
-                凌霄花对自己依赖别人的行为不感到惭愧，反而因自己遮掩住了巍峨挺拔的松树感到得意。
-                柏树见此，吐出了柏籽；仙鹤看到了，也缩起了自己的颈项。
-                青松却对此不以为意：它不追求外表，长得朴实无华。青松经冬不凋；即使凌霄花枝招展，它却不到冬天便会枯萎。
-                龟与鹤都是长寿的动物，但羽毛和龟壳是不同的。
-                它们都是灵物和寿者，因此而能相伴相行，忘却了自己形状的不同。
-                鹤有冲天的气概，龟厌烦地面上安逸的生活。
-                两只鹤分别用嘴衔住竹枝的一端，让龟咬着竹子中间的部分，就这样他们将龟带上了天。
-                飞在空中，鹤嘱咐龟说：“别说话，说话就有可能掉下去堕入泥潭。”
+                披星戴月乘船扬帆经过这里，远远地望见佳气盈盈，听闻颂歌阵阵。
+                这里路不拾遗，可知治理严肃；野外还有富余滞留的谷穗，可见时局之和。
+                天有秋凉暑气供诗人吟咏，晴有美丽溪山令人沉醉。
+                于是我捉来蟾蜍研磨，在彩笺上书写完这诗句，我便将乘风破浪而来。
             </p>
         </div>
     </div>
@@ -87,13 +115,45 @@
             justify-self: center;
         ">
             <p class="tips">
-                1.作品内容中的两点为重复符号，代表前一个字。
-                参考“种种出枝叶”中的“种种”，“舒光射丸丸”中的“丸丸”，和“种种是灵物”中的种种。<br>
-                2.“拟古”是指诗文模仿古人风格形式的创作手法，
-                即这首诗是诗人参考古人风格创作的<br>
+                1.此诗为诗人受林舍人林希（时任湖州知府）之邀前往湖州游玩，通报他已经进入湖州之境所作。<br>
+                2.佳气为祥瑞之气，喻湖州兴盛，治理有方。<br>
+                3.“哦”字义“吟咏”。<br>
+                4.“蟾蜍”指“蟾滴”，即蟾蜍形状的砚滴。砚滴为文房中用于研磨的水盂类器物，可以储水；倾斜砚滴使水滴于墨砚，在用墨条与水研磨。
+                因蟾蜍意象美好（“蟾宫折桂”寓仕途如意，“三足蟾”有旺财指意），宋人广泛使用蟾滴。<br><br>
+            </p>
+                
+            <img src="../蟾蜍砚滴.jpeg" alt="the picture is unable to be shown" width="90%" style="display: grid; justify-self: center;">
 
+            <p style="size: 10px; display: grid; justify-self: center; color: white">
+                越窑青瓷蟾滴 现藏于慈溪市博物馆
+            </p>
+
+            <p class="tips">
+                5.笺指小而华贵的纸张，古时用于题咏或书信。<br>
             </p>
         </div>
     </div>
+
+    <button id="fab">=</button>
+    <div id="menu">
+        <a href="导论.html">导论</a>
+        <a href="first.html">拟古</a>
+        <a href="second.html">吴江垂虹亭作</a>
+        <a href="third.html" style="color: aliceblue;">入境寄集贤林舍人</a>
+        <a href="fourth.html">重九会郡楼</a>
+        <a href="fifth.html">和林公岘山之作</a>
+        <a href="sixth.html">送王涣之彦舟</a>
+    </div>
+
+
+    <script>
+        const B = document.getElementById('fab');
+        const M = document.getElementById('menu');
+
+        B.addEventListener('click', () => {
+            M.style.display = M.style.display === 'block' ? 'none' : 'block';
+        })
+    </script>
+
 </body>
 </html>
