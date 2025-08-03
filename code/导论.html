@@ -64,7 +64,8 @@
     </style>
 </head>
 <body>
-    
+    <audio src="梅花三弄.mp3"  id="audio" autoplay loop></audio>
+    <button id="mus">bofang</button>
     <button id="fab">=</button>
     <div id="menu">
         <a href="导论.html" style="color: aliceblue;">导论</a>
@@ -80,6 +81,19 @@
     <script>
         const B = document.getElementById('fab');
         const M = document.getElementById('menu');
+        const Music = document.querySelector('audio');
+        const b = document.getElementById('mus');
+
+        
+        b.addEventListener('click', () => {
+            if (Music.paused) {
+                Music.play();
+                b.textContent = '停止';
+            } else {
+                Music.pause();
+                b.textContent = '播放';
+            }
+        });
 
         B.addEventListener('click', () => {
             M.style.display = M.style.display === 'block' ? 'none' : 'block';
